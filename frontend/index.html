@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gemini AI Study Assistant</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 16px; }
+    .box { border: 1px solid #ddd; padding: 16px; border-radius: 8px; margin-bottom: 20px; }
+    input, textarea, button { width: 100%; padding: 10px; margin-top: 8px; box-sizing: border-box; }
+    button { background: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Gemini AI Assistant</h2>
+
+  <!-- Box 1: Login -->
+  <div class="box">
+    <h3>1. Login</h3>
+    <input id="username" type="text" placeholder="Username (e.g. Pranathi1)" />
+    <input id="password" type="password" placeholder="Password" />
+    <button onclick="loginUser()">Login</button>
+    <p id="auth-status"></p>
+  </div>
+
+  <!-- Box 2: Ask AI -->
+  <div class="box">
+    <h3>2. Ask Gemini AI</h3>
+    <textarea id="prompt" rows="3" placeholder="Type your question..."></textarea>
+    <button onclick="askAI()">Ask AI</button>
+    <pre id="ai-reply" style="white-space: pre-wrap; margin-top: 12px;"></pre>
+  </div>
+
+  <script src="app.js"></script>
+  <!-- Box 3: Saved History -->
+<div class="box">
+  <h3>3. Saved History</h3>
+  <button onclick="loadHistory()">Refresh History</button>
+  <ul id="history-list"></ul>
+</div>
+
+</body>
+</html>

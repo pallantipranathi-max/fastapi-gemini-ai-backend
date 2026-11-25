@@ -69,3 +69,7 @@ FastAPI/
 | `GET` | `/ai/history` | Yes | Retrieve all saved AI prompts for the logged-in user |
 | `PUT` | `/ai/history/{record_id}` | Yes | Update a prompt and regenerate its AI response |
 | `DELETE` | `/ai/history/{record_id}` | Yes | Delete a specific saved AI record |
+
+## Acknowledgments
+
+- Frontend JavaScript (`frontend/app.js`) was scaffolded with AI assistance and reviewed/integrated manually.
